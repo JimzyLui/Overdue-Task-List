@@ -21,6 +21,10 @@
 		7DA5D4BA1837CBD300FF7174 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA5D49C1837CBD300FF7174 /* UIKit.framework */; };
 		7DA5D4C21837CBD400FF7174 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DA5D4C01837CBD400FF7174 /* InfoPlist.strings */; };
 		7DA5D4C41837CBD400FF7174 /* Overdue_Task_ListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA5D4C31837CBD400FF7174 /* Overdue_Task_ListTests.m */; };
+		7DA5D4CF1837CE1400FF7174 /* W6AddTaskVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA5D4CE1837CE1400FF7174 /* W6AddTaskVC.m */; };
+		7DA5D4D21837CE6000FF7174 /* W6DetailTaskVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA5D4D11837CE6000FF7174 /* W6DetailTaskVC.m */; };
+		7DA5D4D51837CEB300FF7174 /* W6EditTaskVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA5D4D41837CEB300FF7174 /* W6EditTaskVC.m */; };
+		7DA5D4D81837F37500FF7174 /* W6Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA5D4D71837F37500FF7174 /* W6Task.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		7DA5D4BF1837CBD300FF7174 /* Overdue Task ListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Overdue Task ListTests-Info.plist"; sourceTree = "<group>"; };
 		7DA5D4C11837CBD400FF7174 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7DA5D4C31837CBD400FF7174 /* Overdue_Task_ListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Overdue_Task_ListTests.m; sourceTree = "<group>"; };
+		7DA5D4CD1837CE1400FF7174 /* W6AddTaskVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W6AddTaskVC.h; sourceTree = "<group>"; };
+		7DA5D4CE1837CE1400FF7174 /* W6AddTaskVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W6AddTaskVC.m; sourceTree = "<group>"; };
+		7DA5D4D01837CE6000FF7174 /* W6DetailTaskVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W6DetailTaskVC.h; sourceTree = "<group>"; };
+		7DA5D4D11837CE6000FF7174 /* W6DetailTaskVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W6DetailTaskVC.m; sourceTree = "<group>"; };
+		7DA5D4D31837CEB300FF7174 /* W6EditTaskVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W6EditTaskVC.h; sourceTree = "<group>"; };
+		7DA5D4D41837CEB300FF7174 /* W6EditTaskVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W6EditTaskVC.m; sourceTree = "<group>"; };
+		7DA5D4D61837F37500FF7174 /* W6Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W6Task.h; sourceTree = "<group>"; };
+		7DA5D4D71837F37500FF7174 /* W6Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W6Task.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,14 @@
 				7DA5D4A71837CBD300FF7174 /* W6AppDelegate.h */,
 				7DA5D4A81837CBD300FF7174 /* W6AppDelegate.m */,
 				7DA5D4AA1837CBD300FF7174 /* Main.storyboard */,
+				7DA5D4D31837CEB300FF7174 /* W6EditTaskVC.h */,
+				7DA5D4D41837CEB300FF7174 /* W6EditTaskVC.m */,
+				7DA5D4D01837CE6000FF7174 /* W6DetailTaskVC.h */,
+				7DA5D4D11837CE6000FF7174 /* W6DetailTaskVC.m */,
+				7DA5D4D61837F37500FF7174 /* W6Task.h */,
+				7DA5D4D71837F37500FF7174 /* W6Task.m */,
+				7DA5D4CD1837CE1400FF7174 /* W6AddTaskVC.h */,
+				7DA5D4CE1837CE1400FF7174 /* W6AddTaskVC.m */,
 				7DA5D4AD1837CBD300FF7174 /* W6ViewController.h */,
 				7DA5D4AE1837CBD300FF7174 /* W6ViewController.m */,
 				7DA5D4B01837CBD300FF7174 /* Images.xcassets */,
@@ -252,6 +272,10 @@
 			files = (
 				7DA5D4AF1837CBD300FF7174 /* W6ViewController.m in Sources */,
 				7DA5D4A51837CBD300FF7174 /* main.m in Sources */,
+				7DA5D4D51837CEB300FF7174 /* W6EditTaskVC.m in Sources */,
+				7DA5D4D81837F37500FF7174 /* W6Task.m in Sources */,
+				7DA5D4CF1837CE1400FF7174 /* W6AddTaskVC.m in Sources */,
+				7DA5D4D21837CE6000FF7174 /* W6DetailTaskVC.m in Sources */,
 				7DA5D4A91837CBD300FF7174 /* W6AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
