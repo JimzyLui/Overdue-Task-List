@@ -31,9 +31,14 @@
     //populate the fields
     self.taskNameLabel.text = self.task.taskName;
     self.taskDetailsLabel.text = self.task.taskDescription;
+    //[self.taskDetailsLabel sizeToFit];  //doesn't work to top align - save for reference
+
+    [self isCompleted:self.task.isCompleted];  //sets switch settings
+
+    
     //NSLog(@"Details: %@",self.task.taskDescription)
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"MM/dd/yyyy"];
+    [formatter setDateFormat:DATETIME_FORMAT];
     NSString *strDate = [formatter stringFromDate:self.task.dateDue];
   
     self.dateLabel.text = strDate;
@@ -44,6 +49,29 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)isCompleted:(BOOL)isCompleted
+{
+    if (isCompleted == YES) {
+        self.isCompletedSwitch.on = YES;
+        self.isCompletedLabel.text = SWITCH_ON;
+    } else {
+        self.isCompletedSwitch.on = NO;
+        self.isCompletedLabel.text = SWITCH_OFF;
+    }
+}
+- (IBAction)isCompletedSwitchChanged:(UISwitch *)sender {
+    if (self.isCompletedSwitch.on) {
+        self.isCompletedLabel.text = SWITCH_ON;
+        self.task.isCompleted = YES;
+    } else{
+        self.isCompletedLabel.text = SWITCH_OFF;
+        self.task.isCompleted = NO;
+    }
+    [self.delegate updateTasks];
+}
+
+
 
 - (IBAction)editTaskBarButtonItemPressed:(UIBarButtonItem *)sender
 {
@@ -64,8 +92,12 @@
 {
     self.taskNameLabel.text = self.task.taskName;
     self.taskDetailsLabel.text = self.task.taskDescription;
+    //[self.taskDetailsLabel sizeToFit];  //doesn't work to top align - save for reference
+    //[self isCompleted:self.task.isCompleted];  //sets switch settings
+    self.task.isCompleted = self.isCompletedSwitch.on;
+    
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"MM/dd/yyyy"];
+    [formatter setDateFormat:DATETIME_FORMAT];
     NSString *strDate = [formatter stringFromDate:self.task.dateDue];
     self.dateLabel.text = strDate;
     

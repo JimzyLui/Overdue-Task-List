@@ -31,6 +31,8 @@
     self.taskDetailsTextView.text = self.task.taskDescription;
     self.taskDueDatePicker.date = self.task.dateDue;
     
+    [self isCompleted:self.task.isCompleted];  //sets switch settings
+
     //setup delegates for removing keyboard
     self.taskNameTextField.delegate = self;
     self.taskDetailsTextView.delegate = self;
@@ -42,7 +44,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)isCompleted:(BOOL)isCompleted
+{
+    if (isCompleted == YES) {
+        self.isCompletedSwitch.on = YES;
+        self.isCompletedLabel.text = SWITCH_ON;
+    } else {
+        self.isCompletedSwitch.on = NO;
+        self.isCompletedLabel.text = SWITCH_OFF;
+    }
+}
 
+- (IBAction)isCompletedSwitchChanged:(UISwitch *)sender {
+    if (self.isCompletedSwitch.on) {
+        self.isCompletedLabel.text = SWITCH_ON;
+        self.task.isCompleted = YES;
+    } else{
+        self.isCompletedLabel.text = SWITCH_OFF;
+        self.task.isCompleted = NO;
+    }
+}
 
 - (IBAction)saveBarButtonItemPressed:(UIBarButtonItem *)sender {
     [self updateTask];
@@ -54,6 +75,7 @@
     self.task.taskName = self.taskNameTextField.text;
     self.task.taskDescription = self.taskDetailsTextView.text;
     self.task.dateDue = self.taskDueDatePicker.date;
+    self.task.isCompleted = self.isCompletedSwitch.on;
 }
 
 

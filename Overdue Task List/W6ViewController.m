@@ -188,7 +188,7 @@
     cell.textLabel.text = task.taskName;
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MM-dd"];
+    [formatter setDateFormat:DATETIME_FORMAT];
     NSString *stringFromDate = [formatter stringFromDate:task.dateDue];
     cell.detailTextLabel.text = stringFromDate;
     

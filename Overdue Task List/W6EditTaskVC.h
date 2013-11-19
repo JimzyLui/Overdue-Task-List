@@ -22,7 +22,11 @@
 @property (strong, nonatomic) IBOutlet UITextField *taskNameTextField;
 @property (strong, nonatomic) IBOutlet UITextView *taskDetailsTextView;
 @property (strong, nonatomic) IBOutlet UIDatePicker *taskDueDatePicker;
+@property (strong, nonatomic) IBOutlet UISwitch *isCompletedSwitch;
 
+@property (strong, nonatomic) IBOutlet UILabel *isCompletedLabel;
+
+- (IBAction)isCompletedSwitchChanged:(UISwitch *)sender;
 - (IBAction)saveBarButtonItemPressed:(UIBarButtonItem *)sender;
 
 @end

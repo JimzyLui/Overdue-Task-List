@@ -16,7 +16,14 @@
 #define TASK_COMPLETED @"completed"
 #define TASK_NSUSERDEFAULT_KEY @"tasks saved to NSUsersDefault key"
 
+#define DATE_FORMAT @"MM/dd/yyyy"
+#define TIME_FORMAT @"hh:mm a z"
+#define DATETIME_FORMAT @"MM/dd/yyyy  hh:mm a"
+#define DATETIME_FORMAT_24 @"MM/dd/yyyy  HH:mm"
+#define DATETIME_FORMAT_ZONE @"MM/dd/yyyy  hh:mm a z"
 
+#define SWITCH_ON @"Completed"
+#define SWITCH_OFF @"Not Completed"
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>

@@ -485,6 +485,7 @@
 				7DA5D4C91837CBD400FF7174 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DA5D4CA1837CBD400FF7174 /* Build configuration list for PBXNativeTarget "Overdue Task ListTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +494,7 @@
 				7DA5D4CC1837CBD400FF7174 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

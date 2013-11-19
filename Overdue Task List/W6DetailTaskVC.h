@@ -23,6 +23,13 @@
 @property (strong, nonatomic) IBOutlet UILabel *taskNameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *dateLabel;
 @property (strong, nonatomic) IBOutlet UILabel *taskDetailsLabel;
+@property (strong, nonatomic) IBOutlet UISwitch *isCompletedSwitch;
+
+@property (strong, nonatomic) IBOutlet UILabel *isCompletedLabel;
+- (IBAction)isCompletedSwitchChanged:(UISwitch *)sender;
+
+
+
 - (IBAction)editTaskBarButtonItemPressed:(UIBarButtonItem *)sender;
 
 @end
