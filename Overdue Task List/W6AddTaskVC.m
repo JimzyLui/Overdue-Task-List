@@ -57,6 +57,14 @@
     [self.delegate didCancel];
 }
 
+- (IBAction)addTaskBarButtonItemPressed:(UIBarButtonItem *)sender {
+    [self.delegate didAddTask:[self returnNewTaskObject]];
+}
+
+- (IBAction)cancelBarButtonItemPressed:(UIBarButtonItem *)sender {
+    [self.delegate didCancel];
+}
+
 #pragma mark - UITextFieldDelegate
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {

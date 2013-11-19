@@ -25,4 +25,8 @@
 - (IBAction)addTaskButtonPressed:(UIButton *)sender;
 - (IBAction)cancelButtonPressed:(UIButton *)sender;
 
+- (IBAction)addTaskBarButtonItemPressed:(UIBarButtonItem *)sender;
+
+- (IBAction)cancelBarButtonItemPressed:(UIBarButtonItem *)sender;
+
 @end
